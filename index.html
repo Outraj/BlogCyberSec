@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSec Blog - Sécurité Informatique</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <span class="logo-text">Cyber<span class="accent">Sec</span></span>
+            <span class="logo-subtitle">Blog</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#resources">Ressources</a></li>
+            <li><a href="#about">À propos</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Explorez le monde de la <span class="accent">Cybersécurité</span>
+          </h1>
+          <p class="hero-description">
+            Un blog dédié à l'apprentissage et au partage de connaissances en
+            sécurité informatique. Découvrez des articles, des ressources et des
+            analyses sur les dernières tendances en cybersécurité.
+          </p>
+          <div class="hero-buttons">
+            <a href="#articles" class="btn btn-primary">Lire les articles</a>
+            <a href="#resources" class="btn btn-secondary">Ressources</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-snippet">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="filename">security.py</span>
+            </div>
+            <div class="code-content">
+              <code>
+                <span class="comment"># Analyse de sécurité</span><br />
+                <span class="keyword">import</span>
+                <span class="module">hashlib</span><br />
+                <span class="keyword">import</span>
+                <span class="module">secrets</span><br /><br />
+                <span class="keyword">def</span>
+                <span class="function">secure_hash</span>(data):<br />
+                &nbsp;&nbsp;<span class="keyword">return</span>
+                hashlib.sha256(data).<span class="method">hexdigest</span
+                >()<br /><br />
+                <span class="comment"># Génération de token sécurisé</span
+                ><br />
+                token = secrets.<span class="method">token_hex</span>(<span
+                  class="number"
+                  >32</span
+                >)
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="articles-section">
+        <div class="container">
+          <h2 class="section-title">Derniers Articles</h2>
+          <div class="articles-grid">
+            <article class="article-card">
+              <div class="article-header">
+                <span class="article-tag">Fondamentaux</span>
+                <span class="article-date">12 Juin 2025</span>
+              </div>
+              <h3 class="article-title">
+                Introduction à la Cryptographie Moderne
+              </h3>
+              <p class="article-excerpt">
+                Découvrez les bases de la cryptographie, des algorithmes de
+                chiffrement symétrique aux signatures numériques...
+              </p>
+              <a href="#" class="article-link">Lire la suite →</a>
+            </article>
+
+            <article class="article-card">
+              <div class="article-header">
+                <span class="article-tag">Pratique</span>
+                <span class="article-date">10 Juin 2025</span>
+              </div>
+              <h3 class="article-title">Sécurisation d'une Application Web</h3>
+              <p class="article-excerpt">
+                Guide pratique pour implémenter les bonnes pratiques de sécurité
+                dans vos applications web...
+              </p>
+              <a href="#" class="article-link">Lire la suite →</a>
+            </article>
+
+            <article class="article-card">
+              <div class="article-header">
+                <span class="article-tag">Analyse</span>
+                <span class="article-date">8 Juin 2025</span>
+              </div>
+              <h3 class="article-title">Anatomie d'une Attaque par Phishing</h3>
+              <p class="article-excerpt">
+                Analyse détaillée des techniques utilisées par les
+                cybercriminels pour mener des attaques de phishing...
+              </p>
+              <a href="#" class="article-link">Lire la suite →</a>
+            </article>
+
+            <article class="article-card">
+              <div class="article-header">
+                <span class="article-tag">Outils</span>
+                <span class="article-date">5 Juin 2025</span>
+              </div>
+              <h3 class="article-title">Top 10 des Outils de Pentesting</h3>
+              <p class="article-excerpt">
+                Une sélection des meilleurs outils pour les tests de pénétration
+                et l'audit de sécurité...
+              </p>
+              <a href="#" class="article-link">Lire la suite →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources-section">
+        <div class="container">
+          <h2 class="section-title">Ressources Utiles</h2>
+          <div class="resources-grid">
+            <div class="resource-category">
+              <h3 class="category-title">📚 Formation</h3>
+              <ul class="resource-list">
+                <li><a href="#">Cours de Cybersécurité ANSSI</a></li>
+                <li><a href="#">OWASP Top 10</a></li>
+                <li><a href="#">Guide NIST Cybersecurity Framework</a></li>
+                <li><a href="#">Certifications en Sécurité</a></li>
+              </ul>
+            </div>
+
+            <div class="resource-category">
+              <h3 class="category-title">🛠️ Outils</h3>
+              <ul class="resource-list">
+                <li><a href="#">Nmap - Scanner de réseau</a></li>
+                <li><a href="#">Wireshark - Analyseur de protocoles</a></li>
+                <li><a href="#">Metasploit - Framework de pentesting</a></li>
+                <li><a href="#">Burp Suite - Audit d'applications web</a></li>
+              </ul>
+            </div>
+
+            <div class="resource-category">
+              <h3 class="category-title">🌐 Communautés</h3>
+              <ul class="resource-list">
+                <li><a href="#">CERT-FR</a></li>
+                <li><a href="#">Forum SecuriteInfo</a></li>
+                <li><a href="#">Reddit r/cybersecurity</a></li>
+                <li><a href="#">Discord CyberSec FR</a></li>
+              </ul>
+            </div>
+
+            <div class="resource-category">
+              <h3 class="category-title">📰 Veille</h3>
+              <ul class="resource-list">
+                <li><a href="#">Krebs on Security</a></li>
+                <li><a href="#">Schneier on Security</a></li>
+                <li><a href="#">The Hacker News</a></li>
+                <li><a href="#">CYBERMALVEILLANCE.GOUV.FR</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <h2 class="section-title">À propos de ce blog</h2>
+            <p class="about-text">
+              Ce blog est né de ma passion pour la cybersécurité et de mon désir
+              d'apprendre et de partager mes connaissances dans ce domaine
+              fascinant. En tant qu'apprenant dans le domaine de la sécurité
+              informatique, je documente ici mes découvertes, mes analyses et
+              les ressources qui m'aident à progresser.
+            </p>
+            <p class="about-text">
+              Vous trouverez ici des articles sur les fondamentaux de la
+              cybersécurité, des analyses de vulnérabilités, des guides
+              pratiques, et une sélection de ressources utiles pour tous ceux
+              qui s'intéressent à la sécurité informatique.
+            </p>
+            <div class="contact-info">
+              <h3>Contact</h3>
+              <p>
+                N'hésitez pas à me contacter pour échanger sur la cybersécurité
+                !
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>CyberSec<span class="point">.</span>Geek Blog</h4>
+            <p>Votre source d'information sur la cybersécurité</p>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#articles">Articles</a></li>
+              <li><a href="#resources">Ressources</a></li>
+              <li><a href="#about">À propos</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Suivez-moi</h4>
+            <div class="social-links">
+              <a href="#">LinkedIn</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CyberSec Blog. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
